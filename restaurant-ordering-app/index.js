@@ -157,8 +157,8 @@ orderFormDetails.addEventListener('submit', (e) => {
     orderConfirmation.innerHTML = `
         <h2>Thanks, ${name}!</h2>
         <br />
-        <h2>Your order is on it's way to ${address}</h2>
-        <h3 class="cash">Please make sure you have $${totalPrice.toFixed(2)} ready in cash.</h3>
+        <h3>Your order is on it's way to ${address}</h3>
+        <h4 class="cash">Please make sure you have $${totalPrice.toFixed(2)} ready in cash.</h4>
         <p class="refresh-page">
             <a href="#" id="refresh-page">Click here to make a new order</a>
         </p>

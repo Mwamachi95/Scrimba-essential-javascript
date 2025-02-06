@@ -1,13 +1,14 @@
 body {
     margin: 0;
     font-family: "Smythe", serif;
-    background-color: #FFFFFF;
+    background-color: #D2D2D2;
     color: #393333;
 }
 
 .container {
     width: 600px;
     margin: 0 auto; 
+    background-color: #FFFFFF;
 }
 
 .diner-title {
@@ -15,7 +16,6 @@ body {
     background-repeat: no-repeat;
     background-position: 0%;
     height: 167px;
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -53,6 +53,7 @@ h1 {
 .menu-container {
     padding-left: 46px;
     padding-right: 46px;
+    padding-bottom: 48px;
 }
 
 .menu-list {
@@ -144,22 +145,33 @@ _::-webkit-full-page-media, _:future, :root .add-btn {
     font-weight: 300;
     color: #000000;
     text-align: center;
-    margin-top: 48px;
-    margin-bottom: 0px;
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 
 span.remove-btn {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.75em;
-    color: #DEDEDE;
-    margin: 0 auto 0 0;
-    padding-left: 1em;
+    background-color: #FFFFFF;
+    color: #8B8B8B;
+    margin: 0 auto 0 10px;
+    /* padding-right: 8px;
+    padding-left: 1em; */
+    padding: 5px 10px;
     cursor: pointer;
 }
 
-.cart-item {
-    padding-bottom: 2em;
-}
+span.remove-btn:hover, 
+span.remove-btn:focus {
+    border: none;
+    border-radius: 5px;
+    background-color: #16DB99;
+    color: #c1121f;
+} 
+
+/* .cart-item {
+    padding-bottom: 8px;
+} */
 
 .cart-item h2 {
     margin-top: 0;
@@ -174,8 +186,8 @@ span.remove-btn {
 }
 
 .total-container {
-    /* border-top: 2px solid #393333; */
-    padding-top: 2em;
+    border-top: 2px solid #DEDEDE;
+    /* padding-top: 2em; */
 }
 
 .complete-order {
@@ -209,15 +221,17 @@ span.remove-btn {
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: Arial, Helvetica, sans-serif;
-    padding: 10px 20px;
+    padding: 10px 30px;
     text-align: center;
     background-color: #FFFFFF;
     border-radius: 6px;
     box-shadow: 0 0 32px 16px rgba(0,0,0,0.25);
+    width: 400px;
+    padding: 46px;
 }
 
 .payment-container > h2 {
-    padding: 16px 46px;
+    padding: 46px 46px;
 }
 
 .payment-title {
@@ -251,7 +265,7 @@ form {
     flex-direction: column;
     justify-content: center;
     padding: 10px 0;
-    width: 524px;
+    /* width: 524px; */
 }
 
 input {
@@ -287,9 +301,17 @@ input[type="submit"] {
     color: #065F46;
     padding: 2em;
     text-align: center;
-    width: 90%;
-    margin: 2em auto;
+    /* width: 90%; */
+    margin: 0 auto;
     border-radius: 4px;
+}
+
+.order-confirmation h3 {
+    margin-top: 0;
+}
+
+.order-confirmation h4 {
+    font-size: small;
 }
 
 .cash {
@@ -312,5 +334,14 @@ input[type="submit"] {
 
 a {
     text-decoration: none;
-    color: #393333;
+    font-weight: 700;
+    color: #c1121f;
+    padding: 10px 20px;
+    background-color: transparent;
+}
+
+a:hover, a:focus {
+    color: #669bbc;
+    padding: 10px 20px;
+    background-color: #ECFDF5;
 }
