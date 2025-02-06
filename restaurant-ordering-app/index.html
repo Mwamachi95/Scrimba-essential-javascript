@@ -1,0 +1,99 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+        <title>Restaurant Ordering App</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        
+        <header>
+            <div class="container">
+                <div class="diner-title">
+                    <h1>Rizza's Diner</h1>
+                    <h2>The best burgers and pizzas in town</h2>
+                </div>
+                <!-- <img src="images/ferks-guare-KEZdWfYD-ow-unsplash 1.png" alt="A juicy burger" class="logo"> -->
+            </div>
+        </header>
+
+        <article>
+            <div class="container">
+                <div class="menu-container" id="menu-container"></div>
+            </div>
+        </article>
+
+        <section>
+            <div class="container">
+                <div class="order-summary" id="order-summary">
+                    <h2>Your Order</h2>
+                    <div class="cart" id="cart"></div>
+                    <div class="total-container" id="total-container">
+                        <h2>Total Price</h2>
+                        <h3 class="total-item-price" id="total-item-price">
+                            $0.00
+                        </h3>
+                    </div>
+                    <div class="complete-order" id="complete-order">
+                        <button class="complete-order-btn" id="complete-order-btn">
+                                Complete order
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="payment-container" id="payment-container">
+                    <div class="payment-title" id="payment-title">
+                        <h2>Enter your details</h2>
+                        <button class="close-payment-modal" id="close-payment-modal">X</button>
+                    </div>
+                    <form id="payment-details">
+                        <input
+                            type="text"
+                            name="name"
+                            placeholder="Enter your name"
+                            id="order-name"
+                            aria-label="name"
+                            required
+                        >
+                        <input
+                            type="number"
+                            name="bank-card-number"
+                            placeholder="Enter your card number"
+                            id="bank-card-number"
+                            aria-label="bank-card-number"
+                            required
+                        >
+                        <input
+                            type="number"
+                            name="cvv"
+                            placeholder="Enter CVV"
+                            id="cvv"
+                            aria-label="cvv"
+                            required
+                        >
+                        <input
+                            type="text"
+                            name="address"
+                            placeholder="Enter your address"
+                            aria-label="address"
+                            id="order-address"
+                            required
+                        >
+                        <input type="submit" value="Submit">
+                    </form>
+                    <div class="order-confirmation" id="order-confirmation"></div>
+                </div>
+            </div>
+        </section>
+        
+
+	    <script src="index.js" type="module"></script>
+    </body>
+</html>
+
