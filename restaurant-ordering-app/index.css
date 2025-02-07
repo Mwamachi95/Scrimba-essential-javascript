@@ -115,6 +115,11 @@ h1 {
     color: #393333;
 }
 
+.add-btn:hover {
+    background-color: #669bbc;
+    color: #c1121f;
+}
+
 @supports (-webkit-touch-callout: none) {
     .add-btn {
         padding: .25em .5em;
@@ -212,6 +217,12 @@ span.remove-btn:focus {
     padding: 1em;
     border: none;
     border-radius: 4px;
+}
+
+.complete-order-btn:hover {
+    background: #FFFFFF;
+    color: #16DB99;
+    border: 2px solid #16DB99;
 }
 
 .payment-container {
